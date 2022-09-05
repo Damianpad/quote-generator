@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Montserrat:ital,wght@1,500&display=swap');
 
+.dark-mode{
+    filter:invert(1) hue-rotate(180deg);
+}
+
 html {
     box-sizing: border-sizing;
 }
@@ -16,6 +20,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.drk-mode-container {
+    display: flex;
 }
 
 .quote-container {

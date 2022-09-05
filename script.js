@@ -3,6 +3,7 @@ const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const twitterBtn = document.getElementById('twitter');
 const newQuoteBtn = document.getElementById('new-quote');
+const darkModeBtn = document.getElementById('drk-mode');
 
 
 let apiQuotes = [];
@@ -47,9 +48,15 @@ function tweetQuote() {
     window.open(twitterURL, '_blank');
 }
 
+// Dark Mode
+function darkMode() {
+    document.documentElement.classList.toggle('dark-mode');
+}
+
 // Event Listeners
 newQuoteBtn.addEventListener('click', newQuote);
 twitterBtn.addEventListener('click', tweetQuote);
+darkModeBtn.addEventListener('click', darkMode)
 
 
 
