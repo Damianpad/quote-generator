@@ -56,7 +56,8 @@ function darkMode() {
 // Event Listeners
 newQuoteBtn.addEventListener('click', newQuote);
 twitterBtn.addEventListener('click', tweetQuote);
-darkModeBtn.addEventListener('click', darkMode)
+darkModeBtn.addEventListener('click', darkMode);
+darkModeBtn.addEventListener('touch', darkMode);
 
 
 
